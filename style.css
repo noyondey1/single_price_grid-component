@@ -1,13 +1,15 @@
-html{
+html {
     box-sizing: border-box;
     font-size: 100%;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-:root{
+:root {
     --white: hsl(0, 0%, 100%);
     --cyan: hsl(179, 62%, 43%);
     --ltcyan: hsl(179, 47%, 52%);
@@ -19,7 +21,7 @@ html{
     --paddingY: 1.5rem;
 }
 
-body{
+body {
     font-family: 'Karla', sans-serif;
     background-color: var(--ltgray);
     color: var(--grayblue);
@@ -32,28 +34,30 @@ body{
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-weight: bold;
     line-height: 1.5;
     margin-top: 0;
 }
 
-h2{
+h2 {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
 }
 
-h3{
+h3 {
     font-weight: 1.15rem;
 }
 
 
 
-.price{
+.price {
     border-radius: 0.5rem;
     overflow: hidden;
     max-width: 40rem;
@@ -62,41 +66,41 @@ h3{
 }
 
 @media screen and (min-width: 65rem) {
-    .price{
+    .price {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
     }
 
-    .community{
+    .community {
         grid-column: 1 / -1;
     }
 
-    .why ul li{
+    .why ul li {
         font-size: 0.85rem;
     }
 }
 
-.price > *{
+.price>* {
     padding: var(--paddingX) var(--paddingY);
 }
 
-.community{
+.community {
     background-color: var(--white);
 }
 
-.community h2{
+.community h2 {
     color: var(--cyan);
 }
 
-.community .subtitle{
+.community .subtitle {
     color: var(--yellow);
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.community p{
+.community p {
     color: var(--grayblue);
     line-height: 1.75;
     font-size: 0.85rem;
@@ -104,19 +108,20 @@ h3{
     margin-bottom: 0;
 }
 
-.subscription, .why{
+.subscription,
+.why {
     color: var(--ltgray);
 }
 
-.subscription{
+.subscription {
     background-color: var(--cyan);
 }
 
-.subscription h3{
+.subscription h3 {
     margin-bottom: 0.75rem;
 }
 
-.subscription__price{
+.subscription__price {
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -124,20 +129,20 @@ h3{
     margin-bottom: 0.25rem;
 }
 
-.subscription__price span{
+.subscription__price span {
     font-weight: normal;
     font-size: 1rem;
     margin-left: 1rem;
     opacity: 0.8;
 }
 
-.subscription p{
+.subscription p {
     margin-top: 0;
     font-size: 0.9rem;
     margin-bottom: 1.75rem;
 }
 
-.subscription a{
+.subscription a {
     display: block;
     text-align: center;
     font-weight: bold;
@@ -149,28 +154,33 @@ h3{
     transition: background 0.3s ease;
 }
 
-.subscription a:hover{
+.subscription a:hover {
     background-color: var(--dkyellow);
 }
 
-.why{
+.why {
     background-color: var(--ltcyan);
 }
 
-.why ul{
+.why ul {
     margin-top: 0;
     padding: 0;
     margin-bottom: 0;
 }
 
-.why ul li{
+.why ul li {
     list-style: none;
     line-height: 1.5;
     opacity: 0.7;
 }
 
-
 /* Footer */
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
